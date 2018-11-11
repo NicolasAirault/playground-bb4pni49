@@ -104,6 +104,7 @@ public class ComputerFactory {
 Création d'une classe **TestFactory** qui utilise l'implémentation du modèle de conception ci-dessus.
 
 ``` java runnable
+
 public class TestFactory {
 
 	public static void main(String[] args) {
@@ -114,4 +115,5 @@ public class TestFactory {
 	}
 
 }
+
 ```
