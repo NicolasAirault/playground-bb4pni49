@@ -4,3 +4,5 @@ plan:
   statement: statement.md
 - title: Design pattern Factory
   statement: page2.md
+- title: Exemple Factory
+  statement: page3.md
