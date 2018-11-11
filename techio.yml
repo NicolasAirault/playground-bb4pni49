@@ -6,3 +6,7 @@ plan:
   statement: page2.md
 - title: Exemple Factory
   statement: page3.md
+- title: Design pattern Abstract Factory
+  statement: page4.md
+- title: Exemple Abstract Factory
+  statement: page5.md
