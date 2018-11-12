@@ -117,7 +117,7 @@ public abstract class Computer { //autofold
 	}
 }
 
-public class PC extends Computer {autofold
+public class PC extends Computer { //autofold
 
 	private String ram;
 	private String hdd;
@@ -145,7 +145,7 @@ public class PC extends Computer {autofold
 
 }
 
-public class Server extends Computer {autofold
+public class Server extends Computer { //autofold
 
 	private String ram;
 	private String hdd;
@@ -173,7 +173,7 @@ public class Server extends Computer {autofold
 
 }
 
-public class ComputerFactory {autofold
+public class ComputerFactory { //autofold
 
 	public static Computer getComputer(String type, String ram, String hdd, String cpu){
 		if("PC".equalsIgnoreCase(type)) return new PC(ram, hdd, cpu);
