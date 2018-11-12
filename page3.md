@@ -105,7 +105,7 @@ Création d'une classe **TestFactory** qui utilise l'implémentation du modèle 
 
 ``` java runnable
 
-public abstract class Computer { //autofold
+abstract class Computer { //autofold
 	
 	public abstract String getRAM();
 	public abstract String getHDD();
@@ -117,7 +117,7 @@ public abstract class Computer { //autofold
 	}
 }
 
-public class PC extends Computer { //autofold
+class PC extends Computer { //autofold
 
 	private String ram;
 	private String hdd;
@@ -145,7 +145,7 @@ public class PC extends Computer { //autofold
 
 }
 
-public class Server extends Computer { //autofold
+class Server extends Computer { //autofold
 
 	private String ram;
 	private String hdd;
@@ -173,7 +173,7 @@ public class Server extends Computer { //autofold
 
 }
 
-public class ComputerFactory { //autofold
+class ComputerFactory { //autofold
 
 	public static Computer getComputer(String type, String ram, String hdd, String cpu){
 		if("PC".equalsIgnoreCase(type)) return new PC(ram, hdd, cpu);
@@ -183,7 +183,7 @@ public class ComputerFactory { //autofold
 	}
 }
 
-public class TestFactory {
+class TestFactory {
 
 	public static void main(String[] args) {
 		Computer pc = ComputerFactory.getComputer("pc","2 GB","500 GB","2.4 GHz");
