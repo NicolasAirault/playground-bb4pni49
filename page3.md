@@ -106,9 +106,9 @@ Création d'une classe **TestFactory** qui utilise l'implémentation du modèle 
 ``` java runnable
 
 // class autofold
-lol kek
-
-```
+public class kek {
+    System.out.println("mdr");
+}
 
 public class TestFactory {
 
