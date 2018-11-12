@@ -105,7 +105,7 @@ Création d'une classe **TestFactory** qui utilise l'implémentation du modèle 
 
 ``` java runnable
 
-public abstract class Computer {autofold
+public abstract class Computer { //autofold
 	
 	public abstract String getRAM();
 	public abstract String getHDD();
