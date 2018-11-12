@@ -17,7 +17,7 @@ Il existe différents types de design patterns, que nous pouvons regrouper sous 
 2. Les patterns de structuration
 3. Les patterns comportementaux.
 
-Aujourd'hui, les deux designs pattern que nous allons aborder font parti de la famille des **patterns de création**
+Aujourd'hui, les deux designs pattern que nous allons aborder font parti de la famille des **patterns de création** et répondent à la problématique suivante : **Comment peut-on créer des objets sans pour autant savoir quelle classe sera utilisé ?**
 
 # Pourquoi la famille des patterns de création ?
 
