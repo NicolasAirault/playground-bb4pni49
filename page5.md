@@ -5,7 +5,7 @@ Dans notre exemple, on va essayer de faire un système pour créer des ordinateu
 
 Nous devons créer une interface ou une classe abstraite Abstract Factory.
 
-```
+```java
 public interface ComputerAbstractFactory {
 
 	public Computer createComputer();
