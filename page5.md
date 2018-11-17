@@ -1,11 +1,93 @@
 
-Dans notre exemple, on va essayer de faire un système pour créer des ordinateurs avec un pc et un serveur :
+Dans notre exemple, on va essayer de faire un système pour créer des ordinateurs soit un pc et un serveur :
 
-#Etape 1
+# Etape 1
 
-Nous devons créer une interface ou une classe abstraite Abstract Factory.
+Création de la classe abstaite **Computer** qui correspond à la classe mère.
 
-```java
+```  java 
+public abstract class Computer {
+	
+	public abstract String getRAM();
+	public abstract String getHDD();
+	public abstract String getCPU();
+	
+	@Override
+	public String toString(){
+		return "RAM= "+this.getRAM()+", HDD="+this.getHDD()+", CPU="+this.getCPU();
+	}
+}
+```
+
+# Etape 2
+
+Création des classes **PC** et **Server** les classes filles descendant de **Computer**.
+
+```  java 
+public class PC extends Computer {
+
+	private String ram;
+	private String hdd;
+	private String cpu;
+	
+	public PC(String ram, String hdd, String cpu){
+		this.ram=ram;
+		this.hdd=hdd;
+		this.cpu=cpu;
+	}
+	@Override
+	public String getRAM() {
+		return this.ram;
+	}
+
+	@Override
+	public String getHDD() {
+		return this.hdd;
+	}
+
+	@Override
+	public String getCPU() {
+		return this.cpu;
+	}
+
+}
+```
+
+```  java 
+public class Server extends Computer {
+
+	private String ram;
+	private String hdd;
+	private String cpu;
+	
+	public Server(String ram, String hdd, String cpu){
+		this.ram=ram;
+		this.hdd=hdd;
+		this.cpu=cpu;
+	}
+	@Override
+	public String getRAM() {
+		return this.ram;
+	}
+
+	@Override
+	public String getHDD() {
+		return this.hdd;
+	}
+
+	@Override
+	public String getCPU() {
+		return this.cpu;
+	}
+
+}
+```
+
+# Étape 3
+
+Création de la interface **ComputerAbstractFactory** qui possède une méthode abstraite **createComputer()**.
+
+``` java
 public interface ComputerAbstractFactory {
 
 	public Computer createComputer();
@@ -13,11 +95,11 @@ public interface ComputerAbstractFactory {
 }
 ```
 
-#Etape 2
+# Étape 4
 
-Nous allons maintenant créer nos classes d'usine PC / Serveur qui vont maintenant implémenter cette interface et renvoyer leurs sous-classes respectives.
+Création des classes d'usine **PCFactory** et **ServerFactory** qui implement l'interface **ComputerAbstractFactory**.
 
-```
+``` java
 public class PCFactory implements ComputerAbstractFactory {
 
 	private String ram;
@@ -33,41 +115,11 @@ public class PCFactory implements ComputerAbstractFactory {
 	public Computer createComputer() {
 		return new PC(ram,hdd,cpu);
 	}
-}
-```
-Avec sa classe
-```
-public class PC extends Computer {
- 
-    private String ram;
-    private String hdd;
-    private String cpu;
-     
-    public PC(String ram, String hdd, String cpu){
-        this.ram=ram;
-        this.hdd=hdd;
-        this.cpu=cpu;
-    }
-    @Override
-    public String getRAM() {
-        return this.ram;
-    }
- 
-    @Override
-    public String getHDD() {
-        return this.hdd;
-    }
- 
-    @Override
-    public String getCPU() {
-        return this.cpu;
-    }
- 
-}
-```
-Et pareil avec Serveur
 
+}
 ```
+
+``` java
 public class ServerFactory implements ComputerAbstractFactory {
 
 	private String ram;
@@ -84,44 +136,15 @@ public class ServerFactory implements ComputerAbstractFactory {
 	public Computer createComputer() {
 		return new Server(ram,hdd,cpu);
 	}
-}
-```
-Avec sa classe
-```
-public class Server extends Computer {
- 
-    private String ram;
-    private String hdd;
-    private String cpu;
-     
-    public Server(String ram, String hdd, String cpu){
-        this.ram=ram;
-        this.hdd=hdd;
-        this.cpu=cpu;
-    }
-    @Override
-    public String getRAM() {
-        return this.ram;
-    }
- 
-    @Override
-    public String getHDD() {
-        return this.hdd;
-    }
- 
-    @Override
-    public String getCPU() {
-        return this.cpu;
-    }
- 
+
 }
 ```
 
-#Etape 3
+# Étape 5
 
-Nous allons maintenant créer une classe consommateur qui fournira le point d’entrée aux classes clientes pour créer des sous-classes. Cependant pour cela nous avons besoin d'une classe computer sinon ça va être plus compliqué d'utilisé l'usine.
+Création de la classe **ComputerFactory** qui possède une méthode abstraite **getComputer()** prenant en paramètre une **ComputerAbstractFactory**.
 
-```
+``` java
 public class ComputerFactory {
 
 	public static Computer getComputer(ComputerAbstractFactory factory){
@@ -129,34 +152,138 @@ public class ComputerFactory {
 	}
 }
 ```
-Avec la classe Computer
-```
-public class PC extends Computer {
- 
-    private String ram;
-    private String hdd;
-    private String cpu;
-     
-    public PC(String ram, String hdd, String cpu){
-        this.ram=ram;
-        this.hdd=hdd;
-        this.cpu=cpu;
-    }
-    @Override
-    public String getRAM() {
-        return this.ram;
-    }
- 
-    @Override
-    public String getHDD() {
-        return this.hdd;
-    }
- 
-    @Override
-    public String getCPU() {
-        return this.cpu;
-    }
- 
+
+# Étape 6
+
+Création d'une classe **TestFactory** qui utilise l'implémentation du modèle de conception ci-dessus.
+
+``` java runnable
+
+public abstract class Computer { //autofold
+	
+	public abstract String getRAM();
+	public abstract String getHDD();
+	public abstract String getCPU();
+	
+	@Override
+	public String toString(){
+		return "RAM= "+this.getRAM()+", HDD="+this.getHDD()+", CPU="+this.getCPU();
+	}
+}
+
+public class PC extends Computer { //autofold
+
+	private String ram;
+	private String hdd;
+	private String cpu;
+	
+	public PC(String ram, String hdd, String cpu){
+		this.ram=ram;
+		this.hdd=hdd;
+		this.cpu=cpu;
+	}
+	@Override
+	public String getRAM() {
+		return this.ram;
+	}
+
+	@Override
+	public String getHDD() {
+		return this.hdd;
+	}
+
+	@Override
+	public String getCPU() {
+		return this.cpu;
+	}
+
+}
+
+public class Server extends Computer { //autofold
+
+	private String ram;
+	private String hdd;
+	private String cpu;
+	
+	public Server(String ram, String hdd, String cpu){
+		this.ram=ram;
+		this.hdd=hdd;
+		this.cpu=cpu;
+	}
+	@Override
+	public String getRAM() {
+		return this.ram;
+	}
+
+	@Override
+	public String getHDD() {
+		return this.hdd;
+	}
+
+	@Override
+	public String getCPU() {
+		return this.cpu;
+	}
+
+}
+
+public interface ComputerAbstractFactory { //autofold
+
+	public Computer createComputer();
+
+}
+
+public class PCFactory implements ComputerAbstractFactory { //autofold
+
+	private String ram;
+	private String hdd;
+	private String cpu;
+	
+	public PCFactory(String ram, String hdd, String cpu){
+		this.ram=ram;
+		this.hdd=hdd;
+		this.cpu=cpu;
+	}
+	@Override
+	public Computer createComputer() {
+		return new PC(ram,hdd,cpu);
+	}
+
+}
+
+public class ServerFactory implements ComputerAbstractFactory { //autofold
+
+	private String ram;
+	private String hdd;
+	private String cpu;
+	
+	public ServerFactory(String ram, String hdd, String cpu){
+		this.ram=ram;
+		this.hdd=hdd;
+		this.cpu=cpu;
+	}
+	
+	@Override
+	public Computer createComputer() {
+		return new Server(ram,hdd,cpu);
+	}
+
+}
+
+public class ComputerFactory { //autofold
+
+	public static Computer getComputer(ComputerAbstractFactory factory){
+		return factory.createComputer();
+	}
+}
+
+class TestFactory {
+
+	public static void main(String[] args) {
+		Computer pc = com.journaldev.design.abstractfactory.ComputerFactory.getComputer(new PCFactory("2 GB","500 GB","2.4 GHz"));
+		Computer server = com.journaldev.design.abstractfactory.ComputerFactory.getComputer(new ServerFactory("16 GB","1 TB","2.9 GHz"));
+		System.out.println("AbstractFactory PC Config::"+pc);
+		System.out.println("AbstractFactory Server Config::"+server);
+	}
 }
 ```
-Ensuite nous pouvons essayé de voir 
