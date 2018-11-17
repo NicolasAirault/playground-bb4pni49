@@ -277,7 +277,7 @@ public class ComputerFactory { //autofold
 	}
 }
 
-class TestFactory {
+class Main {
 
 	public static void main(String[] args) {
 		Computer pc = com.journaldev.design.abstractfactory.ComputerFactory.getComputer(new PCFactory("2 GB","500 GB","2.4 GHz"));
