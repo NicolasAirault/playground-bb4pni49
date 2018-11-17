@@ -1,5 +1,5 @@
 
-Dans notre exemple, on va essayer de faire un système pour créer des ordinateurs soit un pc et un serveur :
+Dans notre exemple, on va essayer de faire un système pour créer deux types d'ordinateurs, soit un pc, soit un serveur :
 
 # Etape 1
 
