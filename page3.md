@@ -99,7 +99,7 @@ public class ComputerFactory {
 }
 ```
 
-![Diag_design](Factory Example Diagram.png)
+![Diag_design](Factory_Example_Diagram.png)
 
 # Étape 4
 
