@@ -1,4 +1,4 @@
-#Quiz
+#Quizz
 
 ?[Les design patterns vu dans ce tutoriel font parties de la famille des ...]
 -[] ... patterns comportementaux
