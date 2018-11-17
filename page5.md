@@ -85,7 +85,7 @@ public class Server extends Computer {
 
 # Étape 3
 
-Création de la interface **ComputerAbstractFactory** qui possède une méthode abstraite **createComputer()**.
+Création de l'interface **ComputerAbstractFactory** qui possède une méthode abstraite **createComputer()**.
 
 ``` java
 public interface ComputerAbstractFactory {
@@ -97,7 +97,7 @@ public interface ComputerAbstractFactory {
 
 # Étape 4
 
-Création des classes d'usine **PCFactory** et **ServerFactory** qui implement l'interface **ComputerAbstractFactory**.
+Création des classes d'usine **PCFactory** et **ServerFactory** qui implementent l'interface **ComputerAbstractFactory**.
 
 ``` java
 public class PCFactory implements ComputerAbstractFactory {
