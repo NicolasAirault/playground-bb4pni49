@@ -4,7 +4,19 @@ Bonjour à tous. Ce playground va servir à présenter et expliquer deux nouveau
 
 # Design Pattern
 
-Les design patterns, ou "patron de conception", sont des méthodes utilisées en développement logiciel. Ils permettent d'optimiser, de clarifier du code informatique et de le rendre plus robuste.
+Les design patterns, ou "patron de conception", sont des méthodes utilisées en développement logiciel. Ils permettent d'optimiser, de clarifier du code informatique et de le rendre plus robuste, en répondant principalement à une problématique posée par les choix de conceptions.
+
+De cette manière, les design patterns remplissent souvent plusieurs conditions qui respectent les principes SOLID.
+
+**Qu'est-ce que les principes SOLID ?**
+
+Les principes SOLID sont des principes permettant de répondre aux critères permettant de dire d'une conception que cette dernière répond aux attentes de l'évolutivité du code. Il existe 5 principes SOLID qui sont les suivants :
+
+1. SRP (Single Responsability Principle)
+2. OCP (Open-Close Principle)
+3. LSP (Liskov Substitution Principle)
+4. ISP (Interface Segregation Principle)
+5. DIP (Dependency Inversion Principle)
 
 **Mais d'où viennent les design patterns ?**
 
@@ -19,8 +31,11 @@ Il existe différents types de design patterns, que nous pouvons regrouper sous 
 
 Aujourd'hui, les deux designs pattern que nous allons aborder font parti de la famille des **patterns de création** et répondent à la problématique suivante : **Comment peut-on créer des objets sans pour autant savoir quelle classe sera utilisé ?**
 
+
 # Pourquoi la famille des patterns de création ?
 
 Nos deux design patterns sont considérés en tant que pattern de création parce qu'ils permettent **d'instancier**, de **créer** des objets dérivant d'un autre objet. Plus simplement, c'est une autre façon d'utiliser le polymorphisme sans pour autant y faire appel.
+
+De cette façon, nos design patterns respectent souvent les principes OCP et LSP de l'ensemble SOLID.
 
 Nous allons à présent vous expliquer les principes des deux design patterns.
