@@ -99,6 +99,8 @@ public class ComputerFactory {
 }
 ```
 
+Voici le diagramme de classe correspondant à cette exemple :
+
 ![Diag_design](Factory_Example_Diagram.png)
 
 # Étape 4
