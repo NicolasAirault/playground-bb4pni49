@@ -99,9 +99,11 @@ public class ComputerFactory {
 }
 ```
 
+![Diag_design](Factory Example Diagram.png)
+
 # Étape 4
 
-Création d'une classe **TestFactory** qui utilise l'implémentation du modèle de conception ci-dessus.
+Création d'une classe **Main** qui utilise l'implémentation du modèle de conception ci-dessus.
 
 ``` java runnable
 
