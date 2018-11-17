@@ -159,7 +159,7 @@ Création d'une classe **TestFactory** qui utilise l'implémentation du modèle 
 
 ``` java runnable
 
-public abstract class Computer { //autofold
+abstract class Computer { //autofold
 	
 	public abstract String getRAM();
 	public abstract String getHDD();
@@ -171,7 +171,7 @@ public abstract class Computer { //autofold
 	}
 }
 
-public class PC extends Computer { //autofold
+class PC extends Computer { //autofold
 
 	private String ram;
 	private String hdd;
@@ -199,7 +199,7 @@ public class PC extends Computer { //autofold
 
 }
 
-public class Server extends Computer { //autofold
+class Server extends Computer { //autofold
 
 	private String ram;
 	private String hdd;
@@ -227,13 +227,13 @@ public class Server extends Computer { //autofold
 
 }
 
-public interface ComputerAbstractFactory { //autofold
+interface ComputerAbstractFactory { //autofold
 
 	public Computer createComputer();
 
 }
 
-public class PCFactory implements ComputerAbstractFactory { //autofold
+class PCFactory implements ComputerAbstractFactory { //autofold
 
 	private String ram;
 	private String hdd;
@@ -251,7 +251,7 @@ public class PCFactory implements ComputerAbstractFactory { //autofold
 
 }
 
-public class ServerFactory implements ComputerAbstractFactory { //autofold
+class ServerFactory implements ComputerAbstractFactory { //autofold
 
 	private String ram;
 	private String hdd;
@@ -270,7 +270,7 @@ public class ServerFactory implements ComputerAbstractFactory { //autofold
 
 }
 
-public class ComputerFactory { //autofold
+class ComputerFactory { //autofold
 
 	public static Computer getComputer(ComputerAbstractFactory factory){
 		return factory.createComputer();
