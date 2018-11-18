@@ -32,6 +32,4 @@ Aujourd'hui, les deux designs pattern que nous allons aborder font parti de la f
 
 Nos deux design patterns sont considérés en tant que pattern de création parce qu'ils permettent **d'instancier**, de **créer** des objets dérivant d'un autre objet. Plus simplement, c'est une autre façon d'utiliser l'hérédité et le polymorphisme sans pour autant y faire appel.
 
-De cette façon, nos design patterns respectent souvent les principes OCP et LSP de l'ensemble SOLID.
-
 Nous allons à présent vous expliquer les principes des deux design patterns.
