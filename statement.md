@@ -10,7 +10,7 @@ De cette manière, les design patterns remplissent souvent plusieurs conditions 
 
 **Qu'est-ce que les principes SOLID ?**
 
-Les principes SOLID sont des principes que doivent respecter les développeurs lors de la conception d'application. De cette manière, on peut dire d'une conception qu'elle répond aux attentes de l'évolutivité du code, c'est-à-dire qu'elle est plus facile à manipuler, maintenir etc... 
+Les principes SOLID sont des principes qu'utilisent les développeurs lors de la conception d'application dite "agile". De cette manière, on peut dire d'une conception qu'elle répond aux attentes de l'évolutivité du code, c'est-à-dire qu'elle est plus facile à manipuler, maintenir etc... 
 
 Nos design patterns ne répondent qu'a quelques principes SOLID, nous vous les présenterons plus loin dans le tutoriel.
 
