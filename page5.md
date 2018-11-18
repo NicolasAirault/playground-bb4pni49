@@ -153,13 +153,13 @@ public class ComputerFactory {
 }
 ```
 
-# Étape 6
-
-Création d'une classe **TestFactory** qui utilise l'implémentation du modèle de conception ci-dessus.
-
 Voici le diagramme de classes :
 
 ![Diag_design](diagramme_exemple_abstract_factory.png)
+
+# Étape 6
+
+Création d'une classe **TestFactory** qui utilise l'implémentation du modèle de conception ci-dessus.
 
 ``` java runnable
 
