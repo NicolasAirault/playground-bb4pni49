@@ -10,7 +10,9 @@ De cette manière, les design patterns remplissent souvent plusieurs conditions 
 
 **Qu'est-ce que les principes SOLID ?**
 
-Les principes SOLID sont des principes permettant de répondre aux critères permettant de dire d'une conception que cette dernière répond aux attentes de l'évolutivité du code. Il existe 5 principes SOLID qui sont les suivants :
+Les principes SOLID sont des principes que doivent respecter les développeurs lors de la conception d'application. De cette manière, on peut dire d'une conception qu'elle répond aux attentes de l'évolutivité du code, c'est-à-dire qu'elle est plus facile à manipuler, maintenir etc... 
+
+Il existe 5 principes SOLID qui sont les suivants :
 
 1. SRP (Single Responsability Principle)
 2. OCP (Open-Close Principle)
