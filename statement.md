@@ -1,6 +1,6 @@
 # Bienvenue
 
-Bonjour à tous. Ce playground va servir à présenter et expliquer deux nouveaux design pattern,à savoir le design pattern Factory ainsi que le design pattern Abstract Factory.
+Bonjour à tous. Ce playground va servir à présenter et expliquer deux nouveaux design patterns, à savoir le design pattern Factory ainsi que le design pattern Abstract Factory.
 
 # Design Pattern
 
