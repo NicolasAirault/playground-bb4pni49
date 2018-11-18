@@ -12,13 +12,7 @@ De cette manière, les design patterns remplissent souvent plusieurs conditions 
 
 Les principes SOLID sont des principes que doivent respecter les développeurs lors de la conception d'application. De cette manière, on peut dire d'une conception qu'elle répond aux attentes de l'évolutivité du code, c'est-à-dire qu'elle est plus facile à manipuler, maintenir etc... 
 
-Il existe 5 principes SOLID qui sont les suivants :
-
-1. SRP (Single Responsability Principle)
-2. OCP (Open-Close Principle)
-3. LSP (Liskov Substitution Principle)
-4. ISP (Interface Segregation Principle)
-5. DIP (Dependency Inversion Principle)
+Nos design patterns ne répondent qu'a quelques principes SOLID, nous vous les présenterons plus loin dans le tutoriel.
 
 **Mais d'où viennent les design patterns ?**
 
