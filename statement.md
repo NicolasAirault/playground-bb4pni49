@@ -18,7 +18,7 @@ Nos design patterns ne répondent qu'a quelques principes SOLID, nous vous les p
 
 Les design patterns proviennent à l'origine de l'architecte Christoper Alexander, qui rédigea un livre nommé **A Pattern Language**, définissant un ensemble de patrons d'architecture. Plus tard, les design patterns sont formalisés dans le livre **Design Patterns - Elements of Reusable Object-Oriented Software** du **Gang Of Four** composé de **Erich Gamma, Richard Helm, Ralph Johnson** et **John Vlissides**.
 
-Chaque design pattern doit répondre à un problème pouvant se manifester lors de la réalisation d'objets en programmation, et ce de telle sorte à ce que le design pattern puisse être utilisé plusieurs fois dans diverses situations.
+Chaque design pattern doit répondre à un problème pouvant se manifester lors des choix de conception, et ce de tel sorte à ce que le design pattern puisse être utilisé plusieurs fois dans diverses situations.
 
 Il existe différents types de design patterns, que nous pouvons regrouper sous 3 familles :
 1. Les patterns de création
