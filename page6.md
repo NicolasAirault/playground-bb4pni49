@@ -21,9 +21,9 @@
 -[] ... Christoper Alexander, un architecte
 
 ?[Quel principe SOLID est principalement utilisé aux travers des design patterns vu dans ce tutoriel ?]
--[] DIP
--[x] OCP
--[] ISP
+-[x] DIP
+-[] OCP
+-[x] ISP
 
 ?[Avez-vous fini le quizz ?]
 -[] Oui
