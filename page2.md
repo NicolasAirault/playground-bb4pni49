@@ -14,6 +14,6 @@ Comme vous pouvez voir ci-dessus, afin de créer notre **Fabrique**, nous avons 
 
 Ainsi, nous détachons la création des objets de l'utilisation, ce qui permet d'éviter une certaine redondance au niveau de la programmation.
 
-Nous pouvons voir aussi que le fait de passer par des classes filles pour créer différents objets permet de répondre au principe OCP, qui consiste à dire d'un objet qu'il doit être **ouvert aux extensions** et **fermé aux modifications**.
+Nous pouvons voir aussi que le fait de passer par des classes filles pour créer différents objets permet de répondre au principe DIP, qui consiste à dire que **les objets de forte valeur métier ne doivent pas dépendre des objets de faible valeur métier**
 
 Pour être plus clair dans la présentation de ce design pattern, nous allons vous présenter un exemple.
